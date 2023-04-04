@@ -1,0 +1,31 @@
+package loginjava;
+import java.util.Scanner;
+
+
+public class Main {
+
+ 
+    public static void main(String[] args) {
+        //receber e apresentar dados do cadastro do pet com java scanner
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("^ Cadastro de Pet ^");
+        System.out.println("Digite o nome do seu pet:");
+        String nome = sc.nextLine();
+        
+        System.out.println("Digite o sexo do seu pet:");
+        String sexo = sc.nextLine();
+        
+        System.out.println("Digite a raça do seu pet:");
+        String raca = sc.nextLine();
+        
+        System.out.println("Digite a idade do seu pet:");
+        int idade = sc.nextInt();
+        
+        System.out.println("Nome digitado:" +nome
+        +"\nIdade: " +idade
+        +"\nRaça:"+raca
+        +"\nSexo:"+sexo);
+        
+    }
+}
