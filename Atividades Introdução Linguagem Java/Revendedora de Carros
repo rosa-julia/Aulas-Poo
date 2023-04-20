@@ -1,0 +1,36 @@
+package classes;
+
+import java.util.Scanner;
+
+public class Revendedora {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Digite o número de carros vendidos: ");
+
+	       int numCarrosVendidos = input.nextInt();
+
+	       System.out.print("Digite o valor total de vendas: R$");
+
+	       double valorVendas = input.nextDouble();
+
+	       System.out.print("Digite o salário fixo: R$");
+
+	       double salarioFixo = input.nextDouble();
+
+	       System.out.print("Digite o valor por carro vendido: R$");
+
+	       double valorPorCarroVendido = input.nextDouble();
+
+	       double comissaoFixa = numCarrosVendidos * valorPorCarroVendido;
+
+	       double comissaoVariavel = 0.05 * valorVendas;
+
+	       double salarioFinal = salarioFixo + comissaoFixa + comissaoVariavel;
+
+	       System.out.printf("O salário final do vendedor é R$%.2f", salarioFinal);
+
+	   }
+
+	}
