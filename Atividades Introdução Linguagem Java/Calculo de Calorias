@@ -1,0 +1,73 @@
+package classes;
+import java.util.Scanner;
+
+public class QuantidadeCalorias {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Digite o número do prato 1-Vegetariano 2-Peixe 3-Frango 4-Carne:  ");
+		int calorias;
+		int numPrato = input.nextInt();
+		
+		if (numPrato == 1) {
+			calorias = 180;
+			numPrato = calorias;}
+			else if (numPrato == 2) {
+				calorias=230;
+				numPrato = calorias;}
+				
+			else if (numPrato == 3) {
+				calorias= 250;
+				numPrato = calorias;}
+				
+			else if (numPrato == 4) {
+				calorias=350;
+				numPrato = calorias;}
+			else
+			System.out.println("Digite um número válido.");
+		
+		System.out.print("Digite o número da sobremesa 1-Abacaxi 2-Sorvete Diet 3-Mouse Diet 4-Mouse Chocolate:  ");
+		int numSobremesa = input.nextInt();
+		if (numSobremesa == 1) {
+			calorias = 75;
+			numSobremesa = calorias;}
+			else if (numSobremesa == 2) {
+				calorias=110;
+				numSobremesa = calorias;}
+				
+			else if (numSobremesa == 3) {
+				calorias= 170;
+				numSobremesa = calorias;}
+				
+			else if (numSobremesa == 4) {
+				calorias=200;
+				numSobremesa = calorias;}
+			else
+				System.out.println("Digite um número válido.");
+		
+		System.out.print("Digite o número da bebida 1-Chá 2-Suco Laranja 3-Suco Melão 4-Refrigerante Diet:  ");
+		int numBebida = input.nextInt();
+		if (numBebida == 1) {
+			calorias = 20;
+			numBebida = calorias;}
+			else if (numBebida == 2) {
+				calorias=70;
+				numBebida = calorias;}
+				
+			else if (numBebida == 3) {
+				calorias= 100;
+				numBebida = calorias;}
+				
+			else if (numBebida == 4) {
+				calorias=65;
+				numBebida = calorias;}
+			else 
+			System.out.println("Digite um número válido.");
+		
+		int totalCalorias = numPrato + numSobremesa + numBebida;
+			System.out.print("O total de calorias da refeição é :" +totalCalorias + " cal");
+			
+	}
+}
+
+
