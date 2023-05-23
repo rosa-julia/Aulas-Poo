@@ -1,0 +1,37 @@
+package classes;
+import java.util.Scanner;
+public class CadastroPopulacao {
+
+	public static void main(String[] args) {
+		
+		        float porcentagem = 0;
+		        int  maiorIdade = 18;
+
+
+		        Scanner input = new Scanner(System.in);
+		        System.out.print("Informe a idade ou -1 para sair:\n");
+		        int i = input.nextInt();
+
+		        while (i != -1){
+
+		            System.out.print("Informe o sexo F ou M ");
+		            char sexo = input.next().charAt(0);
+		            System.out.print("Informe a cor dos olhos A- azuis, V- verdes, C- castanhos, P- pretos. ");
+		            char olhos = input.next().charAt(0);
+		            System.out.print("Informe a cor dos cabelos L- loiros, R- ruivos, C- castanhos, P- pretos. ");
+		            char cabelo = input.next().charAt(0);
+		            System.out.print("Informe a idade entre 10 a 100 :\n");
+		            int idade = input.nextInt();
+		            if ((sexo == 'f') && (idade >= 18) && (idade <= 35 ) && (olhos == 'c') && (cabelo == 'c' ));
+		            porcentagem++;
+
+		        }
+		        while (i != -1);
+		        System.out.print("Porcentagem feminina com olhos castanhos, cabelos cabelos e que estão entre 18 e 35 anos:" +porcentagem);
+		    }
+
+		
+
+	}
+
+
